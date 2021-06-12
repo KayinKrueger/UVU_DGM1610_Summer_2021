@@ -15,4 +15,4 @@ bool myBool = Ture;
 Console.WriteLine(myBool);
 
 string myText = "Coding is very hard";
-Console.WriteLine(myText); //This coding stuff is not what I had in mind for animation
+Console.WriteLine(myText); // This coding stuff is not what I had in mind for animation
