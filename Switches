@@ -1,0 +1,14 @@
+int legion = 13;
+switch (legion)
+{
+    case 7:
+      Console.WriteLine("We are the Imperial Fists!");
+      break;
+    case 19:
+      Console.WriteLine("We are the Raven Guard!");
+      break;
+    default:
+      Console.WriteLine("We are the Ultramarines!");
+      break;
+}
+//Outputs "We are the Ultramarines!"
