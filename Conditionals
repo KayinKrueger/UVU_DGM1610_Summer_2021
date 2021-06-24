@@ -1,0 +1,3 @@
+int time = 20;
+string result = (time <= 30 ? "It's morning." : "It's evening.";
+Console.WriteLine(result);
