@@ -1,1 +1,1 @@
-
+string[] Legions = {"Dark Angels", "Ultramarines", "Raven Guard", "Space Wolves", "Imperial Fists", "Iron Hands", "Salamanders"};
