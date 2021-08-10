@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SpaceMarineData : ScriptableObject
+{
+    public string marineName;
+    public string description;
+    
+
+    public int movement = 6;
+    public int weaponSkill = 3;
+    public int ballisticSkill = 3;
+    public int strength = 4;
+    public int toughness = 4;
+    public int wounds = 2; //Wounds means health in Warhammer 40k
+    public int attacks = 2;
+    public int leadership = 7;
+    public int save = 3;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+}
