@@ -1,0 +1,33 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MoveDown : MonoBehaviour
+{
+    public float speed = 6.0f;
+    private GameManager gameManager;
+    public int pointValue = 5;
+    public ParticleSystem explosionParticle;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Translate(Vector3.down * Time.deltaTime * speed);
+    }
+
+    public void OnTriggerEnter(Collider collider)
+    {
+        Destroy(gameObject);
+        gameManager.UpdateScore(pointValue);
+        if (gameObject.CompareTag("Bad"))
+        {
+            gameManager.GameOver();
+        }
+    }
+}
